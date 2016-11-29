@@ -22,8 +22,7 @@ app.post('/deletefile/:name', function(req, res, next) {
     });
 });
 app.get('/', function(req, res, next) {
-
-}
+});
 app.post('/', function(req, res, next) {
     // создаем форму
     var form = new multiparty.Form();
