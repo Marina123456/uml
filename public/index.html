@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+
+    <title>Транслятор uml</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+	  <script src="script/jquery-3.1.1.min.js"></script>
+	  <script src="script/script.js"></script>
+    <!-- Fonts from Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&amp;subset=cyrillic" rel="stylesheet">
+	  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+	  <![endif]-->
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+
+
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><b>Транслятор UML</b></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <!--<ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Already a member?</a></li>
+          </ul>-->
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+	<div id="headerwrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<h1>Автоматический перевод uml-модели в<br/>
+					JS-код</h1>
+					<div class="form-inline">
+					  <div class="form-group">
+						  <input id="my-display-filename" readonly class="form-control" placeholder="Ваш файл xmi" >
+						  <input id="myfile" type="file"  name='myfile' class="form-control my-file" onchange="getFileName();">
+						  <button  class="btn btn-warning btn-lg my-button">Загрузить XMI-файл!</button>
+					  </div>
+
+					</div>
+				</div><!-- /col-lg-6 -->
+				<div class="col-lg-6">
+					<!--<img class="img-responsive" src="assets/img/ipad-hand.png" alt="">-->
+					<div class="img-responsive" style="background: url(assets/img/robot.svg); background-size: cover;"></div>
+				</div><!-- /col-lg-6 -->
+				
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /headerwrap -->
+	
+	
+	<div class="container">
+		<div class="row mt centered">
+			<div class="col-lg-6 col-lg-offset-3">
+				<h1>Unified Modeling Language</h1>
+				<h3>Основные цели использования UML при разработке информационных систем</h3>
+			</div>
+		</div><!-- /row -->
+		
+		<div class="row mt centered">
+			<div class="col-lg-4">
+				<div style="background: url(assets/img/say.svg); background-size: cover; width: 200px; height: 200px; margin-left: 20%;" ></div>
+				<h4>1 - Общение заказчика и исполнителя</h4>
+				<p>При общении необходимо правильно интерпретировать требования и найти оптимальный подход к решению поставленной задачи.</p>
+			</div><!--/col-lg-4 -->
+
+			<div class="col-lg-4">
+				<div style="background: url(assets/img/system.svg); background-size: cover; width: 200px; height: 200px; margin-left: 20%;" ></div>
+				<h4>2 - Проектирование ИС</h4>
+				<p>При проектировании приложения любой сложности важное место занимает разделение компонента на несколько уровней абстракций.</p>
+
+			</div><!--/col-lg-4 -->
+
+			<div class="col-lg-4">
+				<div style="background: url(assets/img/new_programm.svg); background-size: cover; width: 200px; height: 200px; margin-left: 20%;" ></div>
+				<h4>3 - Участие UML в разработке системы</h4>
+				<p>На основе UML создается код на языке высокого уровня, а также физическая модель БД. При реверс-инжиниринге применяется обратный процесс кодогенерации</p>
+
+			</div><!--/col-lg-4 -->
+		</div><!-- /row -->
+	</div><!-- /container -->
+	
+	<div class="container">
+		<hr>
+		<div class="row centered">
+			<div class="col-lg-6 col-lg-offset-3">
+
+			</div>
+			<div class="col-lg-3"></div>
+		</div><!-- /row -->
+
+	</div><!-- /container -->
+	
+	<div class="container">
+		<div class="row mt centered">
+			<div class="col-lg-6 col-lg-offset-3">
+				<h1>Диаграммы UML</h1>
+				<h3>Основу UML представляют диаграммы, которые различаются по типам и предназначены для моделирования различных аспектов разработки. </h3>
+			</div>
+		</div><!-- /row -->
+	
+		<! -- CAROUSEL -->
+		<div class="row mt centered">
+			<div class="col-lg-6 col-lg-offset-3">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <!--<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
+				  </ol>
+				
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner">
+				    <div class="item active">
+						<div class="" style="background: url(assets/img/classDiaramm.svg); background-size: cover; width: 250px; height: 200px; margin-left: 25%;"></div>
+				    </div>
+				    <!--<div class="item">
+				      <img src="assets/img/p02.png" alt="">
+				    </div>
+				    <div class="item">
+				      <img src="assets/img/p03.png" alt="">
+				    </div>-->
+				  </div>
+				</div>			
+			</div><!-- /col-lg-8 -->
+		</div><!-- /row -->
+	</div><! --/container -->
+	
+	<div class="container">
+		<hr>
+		<div class="row centered">
+			<div class="col-lg-6 col-lg-offset-3">
+
+			</div>
+			<div class="col-lg-3"></div>
+		</div><!-- /row -->
+
+	</div><!-- /container -->
+
+	<div class="container">
+		<div class="row mt centered">
+			<div class="col-lg-6 col-lg-offset-3">
+				<h1>Контакты для связи</h1>
+				<h3></h3>
+			</div>
+		</div><!-- /row -->
+		
+		<div class="row mt centered">
+			<div class="col-lg-4"></div><!--/col-lg-4 -->
+
+			<div class="col-lg-4">
+				<img class="img-circle" src="assets/img/pic2.jpg" width="140" alt="">
+				<h4>Жирнова Марина</h4>
+				<p>Магистрант кафедры проектирования и дизайна института ИТМО</p>
+				<p><i class="glyphicon glyphicon-send"></i> <i class="glyphicon glyphicon-phone"></i> <i class="glyphicon glyphicon-globe"></i></p>
+			</div><!--/col-lg-4 -->
+
+			<div class="col-lg-4"></div><!--/col-lg-4 -->
+		</div><!-- /row -->
+	</div><!-- /container -->
+	
+	<div class="container">
+
+		<div class="row centered">
+			<div class="col-lg-6 col-lg-offset-3">
+
+			</div>
+			<div class="col-lg-3"></div>
+		</div><!-- /row -->
+
+
+	</div><!-- /container -->
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
